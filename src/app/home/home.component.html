@@ -1,0 +1,35 @@
+<div class="container"
+     (mouseup)="onMouseUp()"
+     (mouseleave)="onMouseUp()">
+     <div class="text-container">
+      <P style="font-size: 20px;">A* Algorithm Visualizer in Angular.</P>
+     </div><br>
+  <div class="grid">
+    <div *ngFor="let row of boxes; let i = index" class="row">
+      <div *ngFor="let box of row; let j = index"
+           [ngStyle]="{'background-color': box.color}"
+           class="box"
+           (mousedown)="onMouseDown(i, j, $event)"
+           (mouseover)="onMouseOver(i, j, $event)">
+        <!--{{ box.Gcost }} {{ box.Hcost }} {{ box.Fcost }}-->
+      </div>
+    </div>
+    <br>
+    <button type="button" class="button" (click)="onStartButtonClick()">Start</button>
+    <button type="button" class="button" (click)="onResetButtonClick()">Reset</button>
+  </div>
+  <div class="side-buttons">
+  <div class="container-box">
+    <div class="white-box" style="background-color: green;"(click)="onStartClick()"></div>
+    <span style="font-size: 20px;">Start node</span>
+  </div>
+  <div class="container-box">
+    <div class="white-box" style="background-color: red;"(click)="onEndClick()"></div>
+    <span style="font-size: 20px;">End node</span>
+  </div>
+  <div class="container-box">
+    <div class="white-box" style="background-color: brown;"(click)="onWallClick()"></div>
+    <span style="font-size: 20px;">Wall node</span>
+  </div>
+  </div>
+</div>

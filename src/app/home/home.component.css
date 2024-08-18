@@ -1,0 +1,103 @@
+html, body {
+  height: 100%;          /* Ensure full height of the viewport */
+  margin: 0;            /* Remove default margin */
+  color: white;         /* Set a default text color (optional) */
+}
+
+.button {
+  background: linear-gradient(45deg, #4CAF50, #81C784);
+  border: none;
+  border-radius: 8px; /* Reduced to make it more rectangular */
+  padding: 12px 28px; /* Increased padding for a wider, rectangular shape */
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: linear-gradient(45deg, #66BB6A, #A5D6A7);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+}
+
+.button:active {
+  background: linear-gradient(45deg, #388E3C, #66BB6A);
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+  transform: translateY(1px);
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column; /* Stack child elements vertically */
+  justify-content: flex-start; /* Align items to the top */
+  align-items: center;     /* Center items horizontally */
+  min-height: 100vh;      /* Ensure container takes at least full height */
+  position: relative;      /* Allow absolute positioning of side buttons */
+  background-color: rgb(34, 34, 34); /* Set background color */
+
+}
+
+.container-box {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center items vertically */
+  color: white; 
+  font-style: italic;
+}
+
+.white-box {
+  width: 10px; /* Adjust width as needed */
+  height: 10px; /* Adjust height as needed */
+  background-color: white;
+  border: 1px solid black; /* Optional border */
+  margin-right: 10px; /* Space between box and text */
+}
+
+.text-container {
+  color: white; 
+  font-style: italic;
+  margin-bottom: 20px; /* Add some space below the text */
+}
+
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally in the grid */
+}
+
+.row {
+  display: flex;
+}
+
+.box {
+  width: 50px;   /* Adjust width */
+  height: 50px;  /* Adjust height */
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.start-button {
+  margin-top: 10px; /* Space between grid and button */
+}
+
+.side-buttons {
+  position: absolute; /* Position buttons on the right side */
+  right: 20px;       /* Space from the right edge */
+  top: 50%;          /* Center vertically */
+  transform: translateY(-50%); /* Adjust position */
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+}
+
+.side-buttons button {
+  margin-bottom: 10px; /* Space between side buttons */
+}
