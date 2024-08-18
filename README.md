@@ -1,27 +1,48 @@
-# PathVisualizer
+# A* Path Visualizer
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.0.
+## Overview
 
-## Development server
+The A* Path Visualizer is an Angular app that demonstrates the A* pathfinding algorithm in a grid-based environment. It allows you to visualize how the algorithm finds the shortest path from a start point to an end point while avoiding obstacles.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+- Interactive grid for setting start/end points and obstacles.
+- Real-time pathfinding visualization.
+- Configurable settings for algorithm behavior.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## How to Use
 
-## Build
+1. **Visit the Deployed App:** [Open the A* Path Visualizer](https://a-star-visualizer-in-angular.vercel.app/home).
+2. Click to set the start and end points on the grid.
+3. Place obstacles by clicking on the grid.
+4. Click "Start" to see the pathfinding in action.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Installation
 
-## Running unit tests
+1. Clone the repository:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+    ```bash
+    git clone https://github.com/Consatntine1212/A-star-visualizer-in-Angular.git
+    ```
 
-## Running end-to-end tests
+2. Navigate to the project directory and install dependencies:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+    ```bash
+    npm install
+    ```
 
-## Further help
+3. Run the development server:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+    ```bash
+    ng serve
+    ```
+
+4. Open `http://localhost:4200` in your browser.
+
+## Contributing
+
+Feel free to fork the repository and submit pull requests. Ensure your changes adhere to the project's coding standards.
+
+## License
+
+
